@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSharp 基础 | 云速查表</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.0d6712bc.css" as="style"><link rel="preload" href="/assets/js/app.8922b282.js" as="script"><link rel="preload" href="/assets/js/2.239692ba.js" as="script"><link rel="preload" href="/assets/js/18.5c6a7afe.js" as="script"><link rel="prefetch" href="/assets/js/10.5da99a23.js"><link rel="prefetch" href="/assets/js/11.96196a1b.js"><link rel="prefetch" href="/assets/js/12.a2a9846a.js"><link rel="prefetch" href="/assets/js/13.07fafd95.js"><link rel="prefetch" href="/assets/js/14.8052b77c.js"><link rel="prefetch" href="/assets/js/15.5b0c23f3.js"><link rel="prefetch" href="/assets/js/16.7e2a934f.js"><link rel="prefetch" href="/assets/js/17.eb15e1b8.js"><link rel="prefetch" href="/assets/js/19.c6f051b3.js"><link rel="prefetch" href="/assets/js/20.0caf923d.js"><link rel="prefetch" href="/assets/js/21.61eb7863.js"><link rel="prefetch" href="/assets/js/22.c9865699.js"><link rel="prefetch" href="/assets/js/23.c61c8074.js"><link rel="prefetch" href="/assets/js/24.f0dde136.js"><link rel="prefetch" href="/assets/js/25.09d855f9.js"><link rel="prefetch" href="/assets/js/26.75821872.js"><link rel="prefetch" href="/assets/js/27.dc3aa37d.js"><link rel="prefetch" href="/assets/js/28.88938225.js"><link rel="prefetch" href="/assets/js/29.37bb4bbc.js"><link rel="prefetch" href="/assets/js/3.9e3ce958.js"><link rel="prefetch" href="/assets/js/30.f5e91c59.js"><link rel="prefetch" href="/assets/js/4.85fce28b.js"><link rel="prefetch" href="/assets/js/5.fc58047b.js"><link rel="prefetch" href="/assets/js/6.9fa616c0.js"><link rel="prefetch" href="/assets/js/7.ec36154e.js"><link rel="prefetch" href="/assets/js/8.a03c11ca.js"><link rel="prefetch" href="/assets/js/9.6d86c775.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0d6712bc.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar blur" style="text-align:center;"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active" style="position:absolute;left:1rem;"><img src="/img/EB-logo.png" alt="云速查表" class="logo" style="margin-right:0;"> <span class="site-name can-hide">云速查表</span></a> <div class="search-box" style="text-align:left;"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <span style="font-weight: bolder;font-size: large;">速查一下</span> <div class="links"><!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><!----> <!---->  <ul class="sidebar-links"><li><a href="/pages/4be529/" aria-current="page" class="active sidebar-link">CSharp 基础</a></li></ul> </aside> <div><main class="page"> <div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-f5f35434><div class="articleInfo" data-v-f5f35434><ul class="breadcrumbs" data-v-f5f35434><li data-v-f5f35434><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-f5f35434></a></li> <li data-v-f5f35434><a href="/categories/?category=CSharp" title="分类" data-v-f5f35434>CSharp</a></li> <!----></ul> <div class="info" data-v-f5f35434><!----> <div title="创建时间" class="date iconfont icon-riqi" data-v-f5f35434><a href="javascript:;" data-v-f5f35434>2020-12-08</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><!----> <h1><!---->
+          CSharp 基础
+        </h1> <div class="theme-vdoing-content content__default"><div class="language-csharp line-numbers-mode"><pre class="language-csharp"><code><span class="token comment">// 单行注释以 // 开始</span>
+<span class="token comment">/*
+多行注释是这样的
+*/</span>
+<span class="token comment">/// &lt;summary&gt;</span>
+<span class="token comment">/// XML文档注释</span>
+<span class="token comment">/// &lt;/summary&gt;</span>
+
+<span class="token comment">// 声明应用用到的命名空间</span>
+<span class="token keyword">using</span> <span class="token namespace">System</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Collections<span class="token punctuation">.</span>Generic</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Data<span class="token punctuation">.</span>Entity</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Dynamic</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Linq</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Linq<span class="token punctuation">.</span>Expressions</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Net</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Threading<span class="token punctuation">.</span>Tasks</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>IO</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 定义作用域，将代码组织成包</span>
+<span class="token keyword">namespace</span> <span class="token namespace">Learning</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// 每个 .cs 文件至少需要包含一个和文件名相同的类</span>
+    <span class="token comment">// 你可以不这么干，但是这样不好。</span>
+    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LearnCSharp</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 基本语法 -  如果你以前用过 Java 或 C++ 的话，可以直接跳到后文「有趣的特性」</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Syntax</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 使用 Console.WriteLine 打印信息</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>
+                <span class="token string">&quot;Integer: &quot;</span> <span class="token operator">+</span> <span class="token number">10</span> <span class="token operator">+</span>
+                <span class="token string">&quot; Double: &quot;</span> <span class="token operator">+</span> <span class="token number">3.14</span> <span class="token operator">+</span>
+                <span class="token string">&quot; Boolean: &quot;</span> <span class="token operator">+</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 使用 Console.Write 打印，不带换行符号</span>
+            Console<span class="token punctuation">.</span><span class="token function">Write</span><span class="token punctuation">(</span><span class="token string">&quot;Hello &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">Write</span><span class="token punctuation">(</span><span class="token string">&quot;World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">///////////////////////////////////////////////////</span>
+            <span class="token comment">// 类型和变量</span>
+            <span class="token comment">//</span>
+            <span class="token comment">// 使用 &lt;type&gt; &lt;name&gt; 定义变量</span>
+            <span class="token comment">///////////////////////////////////////////////////</span>
+
+            <span class="token comment">// Sbyte - 有符号 8-bit 整数</span>
+            <span class="token comment">// (-128 &lt;= sbyte &lt;= 127)</span>
+            <span class="token class-name"><span class="token keyword">sbyte</span></span> fooSbyte <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Byte - 无符号 8-bit 整数</span>
+            <span class="token comment">// (0 &lt;= byte &lt;= 255)</span>
+            <span class="token class-name"><span class="token keyword">byte</span></span> fooByte <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Short - 16-bit 整数</span>
+            <span class="token comment">// 有符号 - (-32,768 &lt;= short &lt;= 32,767)</span>
+            <span class="token comment">// 无符号 - (0 &lt;= ushort &lt;= 65,535)</span>
+            <span class="token class-name"><span class="token keyword">short</span></span> fooShort <span class="token operator">=</span> <span class="token number">10000</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">ushort</span></span> fooUshort <span class="token operator">=</span> <span class="token number">10000</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Integer - 32-bit 整数</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> fooInt <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// (-2,147,483,648 &lt;= int &lt;= 2,147,483,647)</span>
+            <span class="token class-name"><span class="token keyword">uint</span></span> fooUint <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// (0 &lt;= uint &lt;= 4,294,967,295)</span>
+
+            <span class="token comment">// Long - 64-bit 整数</span>
+            <span class="token class-name"><span class="token keyword">long</span></span> fooLong <span class="token operator">=</span> <span class="token number">100000L</span><span class="token punctuation">;</span> <span class="token comment">// (-9,223,372,036,854,775,808 &lt;= long &lt;= 9,223,372,036,854,775,807)</span>
+            <span class="token class-name"><span class="token keyword">ulong</span></span> fooUlong <span class="token operator">=</span> <span class="token number">100000L</span><span class="token punctuation">;</span> <span class="token comment">// (0 &lt;= ulong &lt;= 18,446,744,073,709,551,615)</span>
+            <span class="token comment">// 数字默认为 int 或 uint （取决于尺寸）</span>
+            <span class="token comment">// 使用 L 标明变量值类型为long 或 ulong</span>
+
+            <span class="token comment">// Double - 双精度 64-bit IEEE 754 浮点数</span>
+            <span class="token class-name"><span class="token keyword">double</span></span> fooDouble <span class="token operator">=</span> <span class="token number">123.4</span><span class="token punctuation">;</span> <span class="token comment">// 精度: 15-16 位</span>
+
+            <span class="token comment">// Float - 单精度 32-bit IEEE 754 浮点数</span>
+            <span class="token class-name"><span class="token keyword">float</span></span> fooFloat <span class="token operator">=</span> <span class="token number">234.5f</span><span class="token punctuation">;</span> <span class="token comment">// 精度: 7 位</span>
+            <span class="token comment">// 使用 f 标明变量值类型为float</span>
+
+            <span class="token comment">// Decimal - 128-bits 数据类型，比其他浮点类型精度更高</span>
+            <span class="token comment">// 适合财务、金融</span>
+            <span class="token class-name"><span class="token keyword">decimal</span></span> fooDecimal <span class="token operator">=</span> <span class="token number">150.3m</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 布尔值 - true &amp; false</span>
+            <span class="token class-name"><span class="token keyword">bool</span></span> fooBoolean <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// 或 false</span>
+
+            <span class="token comment">// Char - 单个 16-bit Unicode 字符</span>
+            <span class="token class-name"><span class="token keyword">char</span></span> fooChar <span class="token operator">=</span> <span class="token string character">'A'</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 字符串 -- 和前面的基本类型不同，字符串不是值，而是引用。</span>
+            <span class="token comment">// 这意味着你可以将字符串设为null。</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> fooString <span class="token operator">=</span> <span class="token string">&quot;\&quot;escape\&quot; quotes and add \n (new lines) and \t (tabs)&quot;</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>fooString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 你可以通过索引访问字符串的每个字符：</span>
+            <span class="token class-name"><span class="token keyword">char</span></span> charFromString <span class="token operator">=</span> fooString<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; 'e'</span>
+            <span class="token comment">// 字符串不可修改:  fooString[1] = 'X' 是行不通的;</span>
+
+            <span class="token comment">// 根据当前的locale设定比较字符串，大小写不敏感</span>
+            <span class="token keyword">string</span><span class="token punctuation">.</span><span class="token function">Compare</span><span class="token punctuation">(</span>fooString<span class="token punctuation">,</span> <span class="token string">&quot;x&quot;</span><span class="token punctuation">,</span> StringComparison<span class="token punctuation">.</span>CurrentCultureIgnoreCase<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 基于sprintf的字符串格式化</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> fooFs <span class="token operator">=</span> <span class="token keyword">string</span><span class="token punctuation">.</span><span class="token function">Format</span><span class="token punctuation">(</span><span class="token string">&quot;Check Check, {0} {1}, {0} {1:0.0}&quot;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 日期和格式</span>
+            <span class="token class-name">DateTime</span> fooDate <span class="token operator">=</span> DateTime<span class="token punctuation">.</span>Now<span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>fooDate<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token string">&quot;hh:mm, dd MMM yyyy&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 使用 @  符号可以创建跨行的字符串。使用 &quot;&quot; 来表示 &quot;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> bazString <span class="token operator">=</span> <span class="token string">@&quot;Here's some stuff
+on a new line! &quot;&quot;Wow!&quot;&quot;, the masses cried&quot;</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 使用const或read-only定义常量</span>
+            <span class="token comment">// 常量在编译期演算</span>
+            <span class="token keyword">const</span> <span class="token class-name"><span class="token keyword">int</span></span> HOURS_I_WORK_PER_WEEK <span class="token operator">=</span> <span class="token number">9001</span><span class="token punctuation">;</span>
+
+            <span class="token comment">///////////////////////////////////////////////////</span>
+            <span class="token comment">// 数据结构</span>
+            <span class="token comment">///////////////////////////////////////////////////</span>
+
+            <span class="token comment">// 数组 - 从0开始计数</span>
+            <span class="token comment">// 声明数组时需要确定数组长度</span>
+            <span class="token comment">// 声明数组的格式如下：</span>
+            <span class="token comment">// &lt;datatype&gt;[] &lt;var name&gt; = new &lt;datatype&gt;[&lt;array size&gt;];</span>
+            <span class="token class-name"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> intArray <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name"><span class="token keyword">int</span></span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 声明并初始化数组的其他方式：</span>
+            <span class="token class-name"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> y <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token number">9000</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token number">1337</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 访问数组的元素</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;intArray @ 0: &quot;</span> <span class="token operator">+</span> intArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 数组可以修改</span>
+            intArray<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 列表</span>
+            <span class="token comment">// 列表比数组更常用，因为列表更灵活。</span>
+            <span class="token comment">// 声明列表的格式如下：</span>
+            <span class="token comment">// List&lt;datatype&gt; &lt;var name&gt; = new List&lt;datatype&gt;();</span>
+            <span class="token class-name">List<span class="token punctuation">&lt;</span><span class="token keyword">int</span><span class="token punctuation">&gt;</span></span> intList <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">List<span class="token punctuation">&lt;</span><span class="token keyword">int</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">List<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">&gt;</span></span> stringList <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">List<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">List<span class="token punctuation">&lt;</span><span class="token keyword">int</span><span class="token punctuation">&gt;</span></span> z <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">List<span class="token punctuation">&lt;</span><span class="token keyword">int</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span> <span class="token number">9000</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token number">1337</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// i</span>
+            <span class="token comment">// &lt;&gt;用于泛型 - 参考下文</span>
+
+            <span class="token comment">// 列表无默认值</span>
+            <span class="token comment">// 访问列表元素时必须首先添加元素</span>
+            intList<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;intList @ 0: &quot;</span> <span class="token operator">+</span> intList<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 其他数据结构：</span>
+            <span class="token comment">// 堆栈/队列</span>
+            <span class="token comment">// 字典 (哈希表的实现)</span>
+            <span class="token comment">// 哈希集合</span>
+            <span class="token comment">// 只读集合</span>
+            <span class="token comment">// 元组 (.Net 4+)</span>
+
+            <span class="token comment">///////////////////////////////////////</span>
+            <span class="token comment">// 操作符</span>
+            <span class="token comment">///////////////////////////////////////</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;\n-&gt;Operators&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token class-name"><span class="token keyword">int</span></span> i1 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> i2 <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// 多重声明的简写形式</span>
+
+            <span class="token comment">// 算术直截了当</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>i1 <span class="token operator">+</span> i2 <span class="token operator">-</span> i1 <span class="token operator">*</span> <span class="token number">3</span> <span class="token operator">/</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; 3</span>
+
+            <span class="token comment">// 取余</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;11%3 = &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">11</span> <span class="token operator">%</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; 2</span>
+
+            <span class="token comment">// 比较操作符</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;3 == 2? &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; false</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;3 != 2? &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">!=</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; true</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;3 &gt; 2? &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; true</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;3 &lt; 2? &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; false</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;2 &lt;= 2? &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">&lt;=</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; true</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;2 &gt;= 2? &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">&gt;=</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// =&gt; true</span>
+
+            <span class="token comment">// 位操作符</span>
+            <span class="token comment">/*
+            ~       取反
+            &lt;&lt;      左移（有符号）
+            &gt;&gt;      右移（有符号）
+            &amp;       与
+            ^       异或
+            |       或
+            */</span>
+
+            <span class="token comment">// 自增、自减</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;\n-&gt;Inc/Dec-rementation&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//i = 1. 事后自增</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token operator">++</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//i = 2. 事先自增</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>i<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//i = 1. 事后自减</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token operator">--</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//i = 0. 事先自减</span>
+
+            <span class="token comment">///////////////////////////////////////</span>
+            <span class="token comment">// 控制结构</span>
+            <span class="token comment">///////////////////////////////////////</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;\n-&gt;Control Structures&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 类似C的if语句</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> j <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>j <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;I get printed&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>j <span class="token operator">&gt;</span> <span class="token number">10</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;I don't&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;I also don't&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// 三元表达式</span>
+            <span class="token comment">// 简单的 if/else 语句可以写成：</span>
+            <span class="token comment">// &lt;条件&gt; ? &lt;真&gt; : &lt;假&gt;</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> toCompare <span class="token operator">=</span> <span class="token number">17</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> isTrue <span class="token operator">=</span> toCompare <span class="token operator">==</span> <span class="token number">17</span> <span class="token punctuation">?</span> <span class="token string">&quot;True&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;False&quot;</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// While 循环</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> fooWhile <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>fooWhile <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">//迭代 100 次, fooWhile 0-&gt;99</span>
+                fooWhile<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// Do While 循环</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> fooDoWhile <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token keyword">do</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">//迭代 100 次, fooDoWhile 0-&gt;99</span>
+                fooDoWhile<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>fooDoWhile <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">//for 循环结构 =&gt; for(&lt;初始条件&gt;; &lt;条件&gt;; &lt;步&gt;)</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> fooFor <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> fooFor <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> fooFor<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">//迭代10次, fooFor 0-&gt;9</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// foreach循环</span>
+            <span class="token comment">// foreach 循环结构 =&gt; foreach(&lt;迭代器类型&gt; &lt;迭代器&gt; in &lt;可枚举结构&gt;)</span>
+            <span class="token comment">// foreach 循环适用于任何实现了 IEnumerable 或 IEnumerable&lt;T&gt; 的对象。</span>
+            <span class="token comment">// .Net 框架下的集合类型(数组, 列表, 字典...)</span>
+            <span class="token comment">// 都实现了这些接口</span>
+            <span class="token comment">// (下面的代码中，ToCharArray()可以删除，因为字符串同样实现了IEnumerable)</span>
+            <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">char</span></span> character <span class="token keyword">in</span> <span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">.</span><span class="token function">ToCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">//迭代字符串中的所有字符</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// Switch 语句</span>
+            <span class="token comment">// switch 适用于 byte、short、char和int 数据类型。</span>
+            <span class="token comment">// 同样适用于可枚举的类型</span>
+            <span class="token comment">// 包括字符串类, 以及一些封装了原始值的类：</span>
+            <span class="token comment">// Character、Byte、Short和Integer。</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> month <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> monthString<span class="token punctuation">;</span>
+            <span class="token keyword">switch</span> <span class="token punctuation">(</span>month<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">case</span> <span class="token number">1</span><span class="token punctuation">:</span>
+                    monthString <span class="token operator">=</span> <span class="token string">&quot;January&quot;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">2</span><span class="token punctuation">:</span>
+                    monthString <span class="token operator">=</span> <span class="token string">&quot;February&quot;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">3</span><span class="token punctuation">:</span>
+                    monthString <span class="token operator">=</span> <span class="token string">&quot;March&quot;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token comment">// 你可以一次匹配多个case语句</span>
+                <span class="token comment">// 但是你在添加case语句后需要使用break</span>
+                <span class="token comment">// （否则你需要显式地使用goto case x语句）</span>
+                <span class="token keyword">case</span> <span class="token number">6</span><span class="token punctuation">:</span>
+                <span class="token keyword">case</span> <span class="token number">7</span><span class="token punctuation">:</span>
+                <span class="token keyword">case</span> <span class="token number">8</span><span class="token punctuation">:</span>
+                    monthString <span class="token operator">=</span> <span class="token string">&quot;Summer time!!&quot;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">default</span><span class="token punctuation">:</span>
+                    monthString <span class="token operator">=</span> <span class="token string">&quot;Some other month&quot;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">///////////////////////////////////////</span>
+            <span class="token comment">// 转换、指定数据类型</span>
+            <span class="token comment">///////////////////////////////////////</span>
+
+            <span class="token comment">// 转换类型</span>
+
+            <span class="token comment">// 转换字符串为整数</span>
+            <span class="token comment">// 转换失败会抛出异常</span>
+            <span class="token keyword">int</span><span class="token punctuation">.</span><span class="token function">Parse</span><span class="token punctuation">(</span><span class="token string">&quot;123&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//返回整数类型的&quot;123&quot;</span>
+
+            <span class="token comment">// TryParse会尝试转换类型，失败时会返回缺省类型</span>
+            <span class="token comment">// 例如 0</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> tryInt<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">.</span><span class="token function">TryParse</span><span class="token punctuation">(</span><span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span> <span class="token keyword">out</span> tryInt<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// Funciton is boolean</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>tryInt<span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">// 123</span>
+
+            <span class="token comment">// 转换整数为字符串</span>
+            <span class="token comment">// Convert类提供了一系列便利转换的方法</span>
+            Convert<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// or</span>
+            tryInt<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">///////////////////////////////////////</span>
+        <span class="token comment">// 类</span>
+        <span class="token comment">///////////////////////////////////////</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Classes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 参看文件尾部的对象声明</span>
+
+            <span class="token comment">// 使用new初始化对象</span>
+            <span class="token class-name">Bicycle</span> trek <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Bicycle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 调用对象的方法</span>
+            trek<span class="token punctuation">.</span><span class="token function">SpeedUp</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 你应该一直使用setter和getter方法</span>
+            trek<span class="token punctuation">.</span>Cadence <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 查看对象的信息.</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;trek info: &quot;</span> <span class="token operator">+</span> trek<span class="token punctuation">.</span><span class="token function">Info</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 实例化一个新的Penny Farthing</span>
+            <span class="token class-name">PennyFarthing</span> funbike <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">PennyFarthing</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;funbike info: &quot;</span> <span class="token operator">+</span> funbike<span class="token punctuation">.</span><span class="token function">Info</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">Read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token comment">// 结束main方法</span>
+
+        <span class="token comment">// 终端程序 终端程序必须有一个main方法作为入口</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Main</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> args<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">OtherInterestingFeatures</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//</span>
+        <span class="token comment">// 有趣的特性</span>
+        <span class="token comment">//</span>
+        
+        <span class="token comment">// 默认方法签名</span>
+
+        <span class="token keyword">public</span> <span class="token comment">// 可见性</span>
+        <span class="token keyword">static</span> <span class="token comment">// 允许直接调用类，无需先创建实例</span>
+        <span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token comment">//返回值</span>
+        <span class="token function">MethodSignatures</span><span class="token punctuation">(</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> maxCount<span class="token punctuation">,</span> <span class="token comment">// 第一个变量，类型为整型</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 如果没有传入值，则缺省值为0</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> another <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span>
+            <span class="token keyword">params</span> <span class="token keyword">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span> otherParams <span class="token comment">// 捕获其他参数</span>
+        <span class="token punctuation">)</span>
+        <span class="token punctuation">{</span> 
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 方法可以重名，只要签名不一样</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">MethodSignature</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> maxCount<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//泛型</span>
+        <span class="token comment">// TKey和TValue类由用用户调用函数时指定。</span>
+        <span class="token comment">// 以下函数模拟了Python的SetDefault</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name">TValue</span> <span class="token generic-method"><span class="token function">SetDefault</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>TKey<span class="token punctuation">,</span> TValue<span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span>
+            <span class="token class-name">IDictionary<span class="token punctuation">&lt;</span>TKey<span class="token punctuation">,</span> TValue<span class="token punctuation">&gt;</span></span> dictionary<span class="token punctuation">,</span> 
+            <span class="token class-name">TKey</span> key<span class="token punctuation">,</span> 
+            <span class="token class-name">TValue</span> defaultItem<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">TValue</span> result<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>dictionary<span class="token punctuation">.</span><span class="token function">TryGetValue</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> <span class="token keyword">out</span> result<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> dictionary<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> defaultItem<span class="token punctuation">;</span>
+            <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 你可以限定传入值的范围</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token generic-method"><span class="token function">IterateAndPrint</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>T<span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span><span class="token class-name">T</span> toPrint<span class="token punctuation">)</span> <span class="token keyword">where</span> <span class="token class-name">T</span><span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">IEnumerable<span class="token punctuation">&lt;</span><span class="token keyword">int</span><span class="token punctuation">&gt;</span></span></span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 我们可以进行迭代，因为T是可枚举的</span>
+            <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">var</span></span> item <span class="token keyword">in</span> toPrint<span class="token punctuation">)</span>
+                <span class="token comment">// ittm为整数</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">OtherInterestingFeatures</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 可选参数  </span>
+            <span class="token function">MethodSignatures</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">&quot;Some&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Extra&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Strings&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">MethodSignatures</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token named-parameter punctuation">another</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 显式指定参数，忽略可选参数</span>
+
+            <span class="token comment">// 扩展方法</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+            i<span class="token punctuation">.</span><span class="token function">Print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 参见下面的定义 </span>
+
+            <span class="token comment">// 可为null的类型 对数据库交互、返回值很有用</span>
+            <span class="token comment">// 任何值类型 (i.e. 不为类) 添加后缀 ? 后会变为可为null的值</span>
+            <span class="token comment">// &lt;类型&gt;? &lt;变量名&gt; = &lt;值&gt;</span>
+            <span class="token class-name"><span class="token keyword">int</span><span class="token punctuation">?</span></span> nullable <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">// Nullable&lt;int&gt; 的简写形式</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Nullable variable: &quot;</span> <span class="token operator">+</span> nullable<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">bool</span></span> hasValue <span class="token operator">=</span> nullable<span class="token punctuation">.</span>HasValue<span class="token punctuation">;</span> <span class="token comment">// 不为null时返回真</span>
+            <span class="token comment">// ?? 是用于指定默认值的语法糖</span>
+            <span class="token comment">// 以防变量为null的情况</span>
+            <span class="token class-name"><span class="token keyword">int</span></span> notNullable <span class="token operator">=</span> nullable <span class="token operator">??</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 0</span>
+
+            <span class="token comment">// 变量类型推断 - 你可以让编译器推断变量类型:</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> magic <span class="token operator">=</span> <span class="token string">&quot;编译器确定magic是一个字符串，所以仍然是类型安全的&quot;</span><span class="token punctuation">;</span>
+            <span class="token comment">// magic = 9; // 不工作，因为magic是字符串，而不是整数。 </span>
+
+            <span class="token comment">// 泛型</span>
+            <span class="token comment">//</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> phonebook <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">string</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+                <span class="token punctuation">{</span><span class="token string">&quot;Sarah&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;212 555 5555&quot;</span><span class="token punctuation">}</span> <span class="token comment">// 在电话簿中加入新条目</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 调用上面定义为泛型的SETDEFAULT</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token generic-method"><span class="token function">SetDefault</span><span class="token generic class-name"><span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span><span class="token keyword">string</span><span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span>phonebook<span class="token punctuation">,</span> <span class="token string">&quot;Shaun&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;No Phone&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 没有电话</span>
+            <span class="token comment">// 你不用指定TKey、TValue，因为它们会被隐式地推导出来</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token function">SetDefault</span><span class="token punctuation">(</span>phonebook<span class="token punctuation">,</span> <span class="token string">&quot;Sarah&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;No Phone&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 212 555 5555</span>
+
+            <span class="token comment">// lambda表达式 - 允许你用一行代码搞定函数</span>
+            <span class="token class-name">Func<span class="token punctuation">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">&gt;</span></span> square <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> x <span class="token operator">*</span> x<span class="token punctuation">;</span> <span class="token comment">// 最后一项为返回值</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token function">square</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 9</span>
+
+            <span class="token comment">// 可抛弃的资源管理 - 让你很容易地处理未管理的资源</span>
+            <span class="token comment">// 大多数访问未管理资源 (文件操作符、设备上下文, etc.)的对象</span>
+            <span class="token comment">// 都实现了IDisposable接口。 </span>
+            <span class="token comment">// using语句会为你清理IDisposable对象。</span>
+            <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">StreamWriter</span> writer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">StreamWriter</span><span class="token punctuation">(</span><span class="token string">&quot;log.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                writer<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;这里没有什么可疑的东西&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// 在作用域的结尾，资源会被回收</span>
+                <span class="token comment">// （即使有异常抛出，也一样会回收）</span>
+            <span class="token punctuation">}</span> 
+
+            <span class="token comment">// 并行框架</span>
+            <span class="token comment">// http://blogs.msdn.com/b/csharpfaq/archive/2010/06/01/parallel-programming-in-net-framework-4-getting-started.aspx</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> websites <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name"><span class="token keyword">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> <span class="token punctuation">{</span> 
+                <span class="token string">&quot;http://www.google.com&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;http://www.reddit.com&quot;</span><span class="token punctuation">,</span> 
+                <span class="token string">&quot;http://www.shaunmccarthy.com&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> responses <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">string</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+            <span class="token comment">// 为每个请求新开一个线程</span>
+            <span class="token comment">// 在运行下一步前合并结果</span>
+            Parallel<span class="token punctuation">.</span><span class="token function">ForEach</span><span class="token punctuation">(</span>websites<span class="token punctuation">,</span> 
+                <span class="token keyword">new</span> <span class="token constructor-invocation class-name">ParallelOptions</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>MaxDegreeOfParallelism <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// max of 3 threads</span>
+                website <span class="token operator">=&gt;</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">// Do something that takes a long time on the file</span>
+                <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">var</span></span> r <span class="token operator">=</span> WebRequest<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token constructor-invocation class-name">Uri</span><span class="token punctuation">(</span>website<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">GetResponse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    responses<span class="token punctuation">[</span>website<span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">.</span>ContentType<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 直到所有的请求完成后才会运行下面的代码</span>
+            <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">var</span></span> key <span class="token keyword">in</span> responses<span class="token punctuation">.</span>Keys<span class="token punctuation">)</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;{0}:{1}&quot;</span><span class="token punctuation">,</span> key<span class="token punctuation">,</span> responses<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 动态对象（配合其他语言使用很方便）</span>
+            <span class="token class-name"><span class="token keyword">dynamic</span></span> student <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">ExpandoObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            student<span class="token punctuation">.</span>FirstName <span class="token operator">=</span> <span class="token string">&quot;First Name&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 不需要先定义类！</span>
+
+            <span class="token comment">// 你甚至可以添加方法（接受一个字符串，输出一个字符串）</span>
+            student<span class="token punctuation">.</span>Introduce <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Func<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">string</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span>
+                <span class="token punctuation">(</span>introduceTo<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">string</span><span class="token punctuation">.</span><span class="token function">Format</span><span class="token punctuation">(</span><span class="token string">&quot;Hey {0}, this is {1}&quot;</span><span class="token punctuation">,</span> student<span class="token punctuation">.</span>FirstName<span class="token punctuation">,</span> introduceTo<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>student<span class="token punctuation">.</span><span class="token function">Introduce</span><span class="token punctuation">(</span><span class="token string">&quot;Beth&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// IQUERYABLE&lt;T&gt; - 几乎所有的集合都实现了它，</span>
+            <span class="token comment">// 带给你 Map / Filter / Reduce 风格的方法</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> bikes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">List<span class="token punctuation">&lt;</span>Bicycle<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            bikes<span class="token punctuation">.</span><span class="token function">Sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Sorts the array</span>
+            bikes<span class="token punctuation">.</span><span class="token function">Sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span>b1<span class="token punctuation">,</span> b2<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> b1<span class="token punctuation">.</span>Wheels<span class="token punctuation">.</span><span class="token function">CompareTo</span><span class="token punctuation">(</span>b2<span class="token punctuation">.</span>Wheels<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 根据车轮数排序</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> result <span class="token operator">=</span> bikes
+                <span class="token punctuation">.</span><span class="token function">Where</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>Wheels <span class="token operator">&gt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">// 筛选 - 可以连锁使用 （返回IQueryable)</span>
+                <span class="token punctuation">.</span><span class="token function">Where</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>IsBroken <span class="token operator">&amp;&amp;</span> b<span class="token punctuation">.</span>HasTassles<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">Select</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Map - 这里我们使用了select，所以结果是IQueryable&lt;string&gt;</span>
+
+            <span class="token class-name"><span class="token keyword">var</span></span> sum <span class="token operator">=</span> bikes<span class="token punctuation">.</span><span class="token function">Sum</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>Wheels<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Reduce - 计算集合中的轮子总数</span>
+
+            <span class="token comment">// 创建一个包含基于自行车的一些参数生成的隐式对象的列表</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> bikeSummaries <span class="token operator">=</span> bikes<span class="token punctuation">.</span><span class="token function">Select</span><span class="token punctuation">(</span>b<span class="token operator">=&gt;</span><span class="token keyword">new</span> <span class="token punctuation">{</span> Name <span class="token operator">=</span> b<span class="token punctuation">.</span>Name<span class="token punctuation">,</span> IsAwesome <span class="token operator">=</span> <span class="token operator">!</span>b<span class="token punctuation">.</span>IsBroken <span class="token operator">&amp;&amp;</span> b<span class="token punctuation">.</span>HasTassles <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 很难演示，但是编译器在代码编译完成前就能推导出以上对象的类型</span>
+            <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">var</span></span> bikeSummary <span class="token keyword">in</span> bikeSummaries<span class="token punctuation">.</span><span class="token function">Where</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>IsAwesome<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>bikeSummary<span class="token punctuation">.</span>Name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// ASPARALLEL</span>
+            <span class="token comment">// 邪恶的特性 —— 组合了linq和并行操作</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> threeWheelers <span class="token operator">=</span> bikes<span class="token punctuation">.</span><span class="token function">AsParallel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Where</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>Wheels <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Select</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>Name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 以上代码会并发地运行。会自动新开线程，分别计算结果。</span>
+            <span class="token comment">// 适用于多核、大数据量的场景。</span>
+
+            <span class="token comment">// LINQ - 将IQueryable&lt;T&gt;映射到存储，延缓执行</span>
+            <span class="token comment">// 例如 LinqToSql 映射数据库, LinqToXml 映射XML文档</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> db <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">BikeRespository</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 执行被延迟了，这对于查询数据库来说很好</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> filter <span class="token operator">=</span> db<span class="token punctuation">.</span>Bikes<span class="token punctuation">.</span><span class="token function">Where</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>HasTassles<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 不运行查询</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">42</span> <span class="token operator">&gt;</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token comment">// 你可以不断地增加筛选，包括有条件的筛选，例如用于“高级搜索”功能</span>
+                filter <span class="token operator">=</span> filter<span class="token punctuation">.</span><span class="token function">Where</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>IsBroken<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 不运行查询 </span>
+
+            <span class="token class-name"><span class="token keyword">var</span></span> query <span class="token operator">=</span> filter
+                <span class="token punctuation">.</span><span class="token function">OrderBy</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>Wheels<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">ThenBy</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>Name<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">Select</span><span class="token punctuation">(</span>b <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>Name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 仍然不运行查询</span>
+
+            <span class="token comment">// 现在运行查询，运行查询的时候会打开一个读取器，所以你迭代的是一个副本</span>
+            <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> bike <span class="token keyword">in</span> query<span class="token punctuation">)</span> 
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+
+
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span> <span class="token comment">// 结束LearnCSharp类</span>
+
+    <span class="token comment">// 你可以在同一个 .cs 文件中包含其他类</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Extensions</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 扩展函数</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Print</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token class-name"><span class="token keyword">object</span></span> obj<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 声明类的语法：</span>
+    <span class="token comment">// &lt;public/private/protected/internal&gt; class &lt;类名&gt;{</span>
+    <span class="token comment">//    //数据字段, 构造器, 内部函数.</span>
+    <span class="token operator">/</span>     <span class="token comment">// 在Java中函数被称为方法。</span>
+    <span class="token comment">// }</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Bicycle</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 自行车的字段、变量</span>
+        <span class="token keyword">public</span> <span class="token keyword">int</span> Cadence <span class="token comment">// Public: 任何地方都可以访问</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">get</span> <span class="token comment">// get - 定义获取属性的方法</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> _cadence<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">set</span> <span class="token comment">// set - 定义设置属性的方法</span>
+            <span class="token punctuation">{</span>
+                _cadence <span class="token operator">=</span> <span class="token keyword">value</span><span class="token punctuation">;</span> <span class="token comment">// value是被传递给setter的值</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">private</span> <span class="token class-name"><span class="token keyword">int</span></span> _cadence<span class="token punctuation">;</span>
+
+        <span class="token keyword">protected</span> <span class="token keyword">virtual</span> <span class="token keyword">int</span> Gear <span class="token comment">// 类和子类可以访问</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token comment">// 创建一个自动属性，无需成员字段</span>
+            <span class="token keyword">set</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">internal</span> <span class="token keyword">int</span> Wheels <span class="token comment">// Internal:在同一程序集内可以访问</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">get</span><span class="token punctuation">;</span>
+            <span class="token keyword">private</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token comment">// 可以给get/set方法添加修饰符</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token class-name"><span class="token keyword">int</span></span> _speed<span class="token punctuation">;</span> <span class="token comment">// 默认为private: 只可以在这个类内访问，你也可以使用`private`关键词</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> Name <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+        <span class="token comment">// enum类型包含一组常量</span>
+        <span class="token comment">// 它将名称映射到值（除非特别说明，是一个整型）</span>
+        <span class="token comment">// enmu元素的类型可以是byte、sbyte、short、ushort、int、uint、long、ulong。</span>
+        <span class="token comment">// enum不能包含相同的值。</span>
+        <span class="token keyword">public</span> <span class="token keyword">enum</span> <span class="token class-name">BikeBrand</span>
+        <span class="token punctuation">{</span>
+            AIST<span class="token punctuation">,</span>
+            BMC<span class="token punctuation">,</span>
+            Electra <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">,</span> <span class="token comment">//你可以显式地赋值</span>
+            Gitane <span class="token comment">// 43</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 我们在Bicycle类中定义的这个类型，所以它是一个内嵌类型。</span>
+        <span class="token comment">// 这个类以外的代码应当使用`Bicycle.Brand`来引用。</span>
+
+        <span class="token keyword">public</span> <span class="token class-name">BikeBrand</span> Brand<span class="token punctuation">;</span> <span class="token comment">// 声明一个enum类型之后，我们可以声明这个类型的字段</span>
+
+        <span class="token comment">// 静态方法的类型为自身，不属于特定的对象。</span>
+        <span class="token comment">// 你无需引用对象就可以访问他们。</span>
+        <span class="token comment">// Console.WriteLine(&quot;Bicycles created: &quot; + Bicycle.bicyclesCreated);</span>
+        <span class="token keyword">static</span> <span class="token keyword">public</span> <span class="token class-name"><span class="token keyword">int</span></span> BicyclesCreated <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// 只读值在运行时确定</span>
+        <span class="token comment">// 它们只能在声明或构造器内被赋值</span>
+        <span class="token keyword">readonly</span> <span class="token class-name"><span class="token keyword">bool</span></span> _hasCardsInSpokes <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// read-only private</span>
+
+        <span class="token comment">// 构造器是创建类的一种方式</span>
+        <span class="token comment">// 下面是一个默认的构造器</span>
+        <span class="token keyword">public</span> <span class="token function">Bicycle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+        <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>Gear <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 你可以使用关键词this访问对象的成员</span>
+            Cadence <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>  <span class="token comment">// 不过你并不总是需要它</span>
+            _speed <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+            Name <span class="token operator">=</span> <span class="token string">&quot;Bontrager&quot;</span><span class="token punctuation">;</span>
+            Brand <span class="token operator">=</span> BikeBrand<span class="token punctuation">.</span>AIST<span class="token punctuation">;</span>
+            BicyclesCreated<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 另一个构造器的例子（包含参数）</span>
+        <span class="token keyword">public</span> <span class="token function">Bicycle</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> startCadence<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">int</span></span> startSpeed<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">int</span></span> startGear<span class="token punctuation">,</span>
+                       <span class="token class-name"><span class="token keyword">string</span></span> name<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">bool</span></span> hasCardsInSpokes<span class="token punctuation">,</span> <span class="token class-name">BikeBrand</span> brand<span class="token punctuation">)</span> 
+            <span class="token punctuation">:</span> <span class="token keyword">base</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 首先调用base</span>
+        <span class="token punctuation">{</span>
+            Gear <span class="token operator">=</span> startGear<span class="token punctuation">;</span> 
+            Cadence <span class="token operator">=</span> startCadence<span class="token punctuation">;</span>
+            _speed <span class="token operator">=</span> startSpeed<span class="token punctuation">;</span>
+            Name <span class="token operator">=</span> name<span class="token punctuation">;</span> 
+            _hasCardsInSpokes <span class="token operator">=</span> hasCardsInSpokes<span class="token punctuation">;</span>
+            Brand <span class="token operator">=</span> brand<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 构造器可以连锁使用</span>
+        <span class="token keyword">public</span> <span class="token function">Bicycle</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> startCadence<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">int</span></span> startSpeed<span class="token punctuation">,</span> <span class="token class-name">BikeBrand</span> brand<span class="token punctuation">)</span> <span class="token punctuation">:</span>
+            <span class="token keyword">this</span><span class="token punctuation">(</span>startCadence<span class="token punctuation">,</span> startSpeed<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;big wheels&quot;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> brand<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 函数语法</span>
+        <span class="token comment">// &lt;public/private/protected&gt; &lt;返回值&gt; &lt;函数名称&gt;(&lt;参数&gt;)</span>
+
+        <span class="token comment">// 类可以为字段实现 getters 和 setters 方法 for their fields</span>
+        <span class="token comment">// 或者可以实现属性（C#推荐使用这个）</span>
+        <span class="token comment">// 方法的参数可以有默认值</span>
+        <span class="token comment">// 在有默认值的情况下，调用方法的时候可以省略相应的参数</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">SpeedUp</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> increment <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            _speed <span class="token operator">+=</span> increment<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">SlowDown</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> decrement <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            _speed <span class="token operator">-=</span> decrement<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 属性可以访问和设置值</span>
+        <span class="token comment">// 当只需要访问数据的时候，考虑使用属性。</span>
+        <span class="token comment">// 属性可以定义get和set，或者是同时定义两者</span>
+        <span class="token keyword">private</span> <span class="token class-name"><span class="token keyword">bool</span></span> _hasTassles<span class="token punctuation">;</span> <span class="token comment">// private variable</span>
+        <span class="token keyword">public</span> <span class="token keyword">bool</span> HasTassles <span class="token comment">// public accessor</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">get</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> _hasTassles<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+            <span class="token keyword">set</span> <span class="token punctuation">{</span> _hasTassles <span class="token operator">=</span> <span class="token keyword">value</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment">// 你可以在一行之内定义自动属性</span>
+        <span class="token comment">// 这个语法会自动创建后备字段</span>
+        <span class="token comment">// 你可以给getter或setter设置访问修饰符</span>
+        <span class="token comment">// 以便限制它们的访问</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">bool</span></span> IsBroken <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">private</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+        <span class="token comment">// 属性的实现可以是自动的</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">int</span></span> FrameSize
+        <span class="token punctuation">{</span>
+            <span class="token keyword">get</span><span class="token punctuation">;</span>
+            <span class="token comment">// 你可以给get或set指定访问修饰符</span>
+            <span class="token comment">// 以下代码意味着只有Bicycle类可以调用Framesize的set</span>
+            <span class="token keyword">private</span> <span class="token keyword">set</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//显示对象属性的方法</span>
+        <span class="token keyword">public</span> <span class="token keyword">virtual</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> <span class="token function">Info</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">&quot;Gear: &quot;</span> <span class="token operator">+</span> Gear <span class="token operator">+</span>
+                    <span class="token string">&quot; Cadence: &quot;</span> <span class="token operator">+</span> Cadence <span class="token operator">+</span>
+                    <span class="token string">&quot; Speed: &quot;</span> <span class="token operator">+</span> _speed <span class="token operator">+</span>
+                    <span class="token string">&quot; Name: &quot;</span> <span class="token operator">+</span> Name <span class="token operator">+</span>
+                    <span class="token string">&quot; Cards in Spokes: &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span>_hasCardsInSpokes <span class="token punctuation">?</span> <span class="token string">&quot;yes&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;no&quot;</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+                    <span class="token string">&quot;\n------------------------------\n&quot;</span>
+                    <span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 方法可以是静态的。通常用于辅助方法。</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">bool</span></span> <span class="token function">DidWeCreateEnoughBycles</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 在静态方法中，你只能引用类的静态成员</span>
+            <span class="token keyword">return</span> BicyclesCreated <span class="token operator">&gt;</span> <span class="token number">9000</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token comment">// 如果你的类只需要静态成员，考虑将整个类作为静态类。</span>
+
+
+    <span class="token punctuation">}</span> <span class="token comment">//  Bicycle类结束</span>
+
+    <span class="token comment">// PennyFarthing是Bicycle的一个子类</span>
+    <span class="token keyword">class</span> <span class="token class-name">PennyFarthing</span> <span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">Bicycle</span></span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// (Penny Farthings是一种前轮很大的自行车。没有齿轮。）</span>
+
+        <span class="token comment">// 调用父构造器</span>
+        <span class="token keyword">public</span> <span class="token function">PennyFarthing</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> startCadence<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">int</span></span> startSpeed<span class="token punctuation">)</span> <span class="token punctuation">:</span>
+            <span class="token keyword">base</span><span class="token punctuation">(</span>startCadence<span class="token punctuation">,</span> startSpeed<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;PennyFarthing&quot;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> BikeBrand<span class="token punctuation">.</span>Electra<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">protected</span> <span class="token keyword">override</span> <span class="token return-type class-name"><span class="token keyword">int</span></span> Gear
+        <span class="token punctuation">{</span>
+            <span class="token keyword">get</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">set</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">ArgumentException</span><span class="token punctuation">(</span><span class="token string">&quot;你不可能在PennyFarthing上切换齿轮&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token keyword">override</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> <span class="token function">Info</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> result <span class="token operator">=</span> <span class="token string">&quot;PennyFarthing bicycle &quot;</span><span class="token punctuation">;</span>
+            result <span class="token operator">+=</span> <span class="token keyword">base</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 调用父方法</span>
+            <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 接口只包含成员的签名，而没有实现。</span>
+    <span class="token keyword">interface</span> <span class="token class-name">IJumpable</span>
+    <span class="token punctuation">{</span>
+        <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Jump</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> meters<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 所有接口成员是隐式地公开的</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">interface</span> <span class="token class-name">IBreakable</span>
+    <span class="token punctuation">{</span>
+        <span class="token return-type class-name"><span class="token keyword">bool</span></span> Broken <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// 接口可以包含属性、方法和事件</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 类只能继承一个类，但是可以实现任意数量的接口</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name"><span class="token keyword">int</span></span> damage <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Jump</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> meters<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            damage <span class="token operator">+=</span> meters<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">bool</span></span> Broken
+        <span class="token punctuation">{</span>
+            <span class="token keyword">get</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> damage <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/// &lt;summary&gt;</span>
+    <span class="token comment">/// 连接数据库，一个 LinqToSql的示例。</span>
+    <span class="token comment">/// EntityFramework Code First 很棒 (类似 Ruby的 ActiveRecord, 不过是双向的)</span>
+    <span class="token comment">/// http://msdn.microsoft.com/en-us/data/jj193542.aspx</span>
+    <span class="token comment">/// &lt;/summary&gt;</span>
+    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BikeRespository</span> <span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">DbSet</span></span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">public</span> <span class="token function">BikeRespository</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">:</span> <span class="token keyword">base</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">DbSet<span class="token punctuation">&lt;</span>Bicycle<span class="token punctuation">&gt;</span></span> Bikes <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token comment">// 结束 Namespace</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br><span class="line-number">428</span><br><span class="line-number">429</span><br><span class="line-number">430</span><br><span class="line-number">431</span><br><span class="line-number">432</span><br><span class="line-number">433</span><br><span class="line-number">434</span><br><span class="line-number">435</span><br><span class="line-number">436</span><br><span class="line-number">437</span><br><span class="line-number">438</span><br><span class="line-number">439</span><br><span class="line-number">440</span><br><span class="line-number">441</span><br><span class="line-number">442</span><br><span class="line-number">443</span><br><span class="line-number">444</span><br><span class="line-number">445</span><br><span class="line-number">446</span><br><span class="line-number">447</span><br><span class="line-number">448</span><br><span class="line-number">449</span><br><span class="line-number">450</span><br><span class="line-number">451</span><br><span class="line-number">452</span><br><span class="line-number">453</span><br><span class="line-number">454</span><br><span class="line-number">455</span><br><span class="line-number">456</span><br><span class="line-number">457</span><br><span class="line-number">458</span><br><span class="line-number">459</span><br><span class="line-number">460</span><br><span class="line-number">461</span><br><span class="line-number">462</span><br><span class="line-number">463</span><br><span class="line-number">464</span><br><span class="line-number">465</span><br><span class="line-number">466</span><br><span class="line-number">467</span><br><span class="line-number">468</span><br><span class="line-number">469</span><br><span class="line-number">470</span><br><span class="line-number">471</span><br><span class="line-number">472</span><br><span class="line-number">473</span><br><span class="line-number">474</span><br><span class="line-number">475</span><br><span class="line-number">476</span><br><span class="line-number">477</span><br><span class="line-number">478</span><br><span class="line-number">479</span><br><span class="line-number">480</span><br><span class="line-number">481</span><br><span class="line-number">482</span><br><span class="line-number">483</span><br><span class="line-number">484</span><br><span class="line-number">485</span><br><span class="line-number">486</span><br><span class="line-number">487</span><br><span class="line-number">488</span><br><span class="line-number">489</span><br><span class="line-number">490</span><br><span class="line-number">491</span><br><span class="line-number">492</span><br><span class="line-number">493</span><br><span class="line-number">494</span><br><span class="line-number">495</span><br><span class="line-number">496</span><br><span class="line-number">497</span><br><span class="line-number">498</span><br><span class="line-number">499</span><br><span class="line-number">500</span><br><span class="line-number">501</span><br><span class="line-number">502</span><br><span class="line-number">503</span><br><span class="line-number">504</span><br><span class="line-number">505</span><br><span class="line-number">506</span><br><span class="line-number">507</span><br><span class="line-number">508</span><br><span class="line-number">509</span><br><span class="line-number">510</span><br><span class="line-number">511</span><br><span class="line-number">512</span><br><span class="line-number">513</span><br><span class="line-number">514</span><br><span class="line-number">515</span><br><span class="line-number">516</span><br><span class="line-number">517</span><br><span class="line-number">518</span><br><span class="line-number">519</span><br><span class="line-number">520</span><br><span class="line-number">521</span><br><span class="line-number">522</span><br><span class="line-number">523</span><br><span class="line-number">524</span><br><span class="line-number">525</span><br><span class="line-number">526</span><br><span class="line-number">527</span><br><span class="line-number">528</span><br><span class="line-number">529</span><br><span class="line-number">530</span><br><span class="line-number">531</span><br><span class="line-number">532</span><br><span class="line-number">533</span><br><span class="line-number">534</span><br><span class="line-number">535</span><br><span class="line-number">536</span><br><span class="line-number">537</span><br><span class="line-number">538</span><br><span class="line-number">539</span><br><span class="line-number">540</span><br><span class="line-number">541</span><br><span class="line-number">542</span><br><span class="line-number">543</span><br><span class="line-number">544</span><br><span class="line-number">545</span><br><span class="line-number">546</span><br><span class="line-number">547</span><br><span class="line-number">548</span><br><span class="line-number">549</span><br><span class="line-number">550</span><br><span class="line-number">551</span><br><span class="line-number">552</span><br><span class="line-number">553</span><br><span class="line-number">554</span><br><span class="line-number">555</span><br><span class="line-number">556</span><br><span class="line-number">557</span><br><span class="line-number">558</span><br><span class="line-number">559</span><br><span class="line-number">560</span><br><span class="line-number">561</span><br><span class="line-number">562</span><br><span class="line-number">563</span><br><span class="line-number">564</span><br><span class="line-number">565</span><br><span class="line-number">566</span><br><span class="line-number">567</span><br><span class="line-number">568</span><br><span class="line-number">569</span><br><span class="line-number">570</span><br><span class="line-number">571</span><br><span class="line-number">572</span><br><span class="line-number">573</span><br><span class="line-number">574</span><br><span class="line-number">575</span><br><span class="line-number">576</span><br><span class="line-number">577</span><br><span class="line-number">578</span><br><span class="line-number">579</span><br><span class="line-number">580</span><br><span class="line-number">581</span><br><span class="line-number">582</span><br><span class="line-number">583</span><br><span class="line-number">584</span><br><span class="line-number">585</span><br><span class="line-number">586</span><br><span class="line-number">587</span><br><span class="line-number">588</span><br><span class="line-number">589</span><br><span class="line-number">590</span><br><span class="line-number">591</span><br><span class="line-number">592</span><br><span class="line-number">593</span><br><span class="line-number">594</span><br><span class="line-number">595</span><br><span class="line-number">596</span><br><span class="line-number">597</span><br><span class="line-number">598</span><br><span class="line-number">599</span><br><span class="line-number">600</span><br><span class="line-number">601</span><br><span class="line-number">602</span><br><span class="line-number">603</span><br><span class="line-number">604</span><br><span class="line-number">605</span><br><span class="line-number">606</span><br><span class="line-number">607</span><br><span class="line-number">608</span><br><span class="line-number">609</span><br><span class="line-number">610</span><br><span class="line-number">611</span><br><span class="line-number">612</span><br><span class="line-number">613</span><br><span class="line-number">614</span><br><span class="line-number">615</span><br><span class="line-number">616</span><br><span class="line-number">617</span><br><span class="line-number">618</span><br><span class="line-number">619</span><br><span class="line-number">620</span><br><span class="line-number">621</span><br><span class="line-number">622</span><br><span class="line-number">623</span><br><span class="line-number">624</span><br><span class="line-number">625</span><br><span class="line-number">626</span><br><span class="line-number">627</span><br><span class="line-number">628</span><br><span class="line-number">629</span><br><span class="line-number">630</span><br><span class="line-number">631</span><br><span class="line-number">632</span><br><span class="line-number">633</span><br><span class="line-number">634</span><br><span class="line-number">635</span><br><span class="line-number">636</span><br><span class="line-number">637</span><br><span class="line-number">638</span><br><span class="line-number">639</span><br><span class="line-number">640</span><br><span class="line-number">641</span><br><span class="line-number">642</span><br><span class="line-number">643</span><br><span class="line-number">644</span><br><span class="line-number">645</span><br><span class="line-number">646</span><br><span class="line-number">647</span><br><span class="line-number">648</span><br><span class="line-number">649</span><br><span class="line-number">650</span><br><span class="line-number">651</span><br><span class="line-number">652</span><br><span class="line-number">653</span><br><span class="line-number">654</span><br><span class="line-number">655</span><br><span class="line-number">656</span><br><span class="line-number">657</span><br><span class="line-number">658</span><br><span class="line-number">659</span><br><span class="line-number">660</span><br><span class="line-number">661</span><br><span class="line-number">662</span><br><span class="line-number">663</span><br><span class="line-number">664</span><br><span class="line-number">665</span><br><span class="line-number">666</span><br><span class="line-number">667</span><br><span class="line-number">668</span><br><span class="line-number">669</span><br><span class="line-number">670</span><br><span class="line-number">671</span><br><span class="line-number">672</span><br><span class="line-number">673</span><br><span class="line-number">674</span><br><span class="line-number">675</span><br><span class="line-number">676</span><br><span class="line-number">677</span><br><span class="line-number">678</span><br><span class="line-number">679</span><br><span class="line-number">680</span><br><span class="line-number">681</span><br><span class="line-number">682</span><br><span class="line-number">683</span><br><span class="line-number">684</span><br><span class="line-number">685</span><br><span class="line-number">686</span><br><span class="line-number">687</span><br><span class="line-number">688</span><br><span class="line-number">689</span><br><span class="line-number">690</span><br><span class="line-number">691</span><br><span class="line-number">692</span><br><span class="line-number">693</span><br><span class="line-number">694</span><br><span class="line-number">695</span><br><span class="line-number">696</span><br><span class="line-number">697</span><br><span class="line-number">698</span><br><span class="line-number">699</span><br><span class="line-number">700</span><br><span class="line-number">701</span><br><span class="line-number">702</span><br><span class="line-number">703</span><br><span class="line-number">704</span><br><span class="line-number">705</span><br><span class="line-number">706</span><br><span class="line-number">707</span><br><span class="line-number">708</span><br><span class="line-number">709</span><br><span class="line-number">710</span><br><span class="line-number">711</span><br><span class="line-number">712</span><br><span class="line-number">713</span><br><span class="line-number">714</span><br><span class="line-number">715</span><br><span class="line-number">716</span><br><span class="line-number">717</span><br><span class="line-number">718</span><br><span class="line-number">719</span><br><span class="line-number">720</span><br><span class="line-number">721</span><br><span class="line-number">722</span><br><span class="line-number">723</span><br><span class="line-number">724</span><br><span class="line-number">725</span><br><span class="line-number">726</span><br><span class="line-number">727</span><br><span class="line-number">728</span><br><span class="line-number">729</span><br><span class="line-number">730</span><br><span class="line-number">731</span><br><span class="line-number">732</span><br><span class="line-number">733</span><br><span class="line-number">734</span><br><span class="line-number">735</span><br><span class="line-number">736</span><br><span class="line-number">737</span><br><span class="line-number">738</span><br><span class="line-number">739</span><br><span class="line-number">740</span><br><span class="line-number">741</span><br><span class="line-number">742</span><br><span class="line-number">743</span><br><span class="line-number">744</span><br><span class="line-number">745</span><br><span class="line-number">746</span><br><span class="line-number">747</span><br><span class="line-number">748</span><br><span class="line-number">749</span><br><span class="line-number">750</span><br><span class="line-number">751</span><br><span class="line-number">752</span><br><span class="line-number">753</span><br><span class="line-number">754</span><br><span class="line-number">755</span><br><span class="line-number">756</span><br></div></div></div></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2020/12/10, 07:23:27</span></div></div> <div class="page-nav-wapper"><!----> <!----></div></div> <!----> </main></div> <div class="footer"><div class="icons"><a href="mailto:894072666@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/xugaoyi" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2021
+    <span>Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">跟随系统</li><li class="iconfont icon-rijianmoshi">浅色模式</li><li class="iconfont icon-yejianmoshi">深色模式</li><li class="iconfont icon-yuedu">阅读模式</li></ul></div></div> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.8922b282.js" defer></script><script src="/assets/js/2.239692ba.js" defer></script><script src="/assets/js/18.5c6a7afe.js" defer></script>
+  </body>
+</html>
